@@ -1,5 +1,7 @@
 def call(){
-
+    echo "${scm.userRemoteConfigs[0].url}"
+    pipeline {
+    agent any
     stages {
         stage('Clone sources') {
             steps {
@@ -19,4 +21,5 @@ def call(){
             }
         }
     }
+}
 }
