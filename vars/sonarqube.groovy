@@ -1,7 +1,5 @@
 def call(){
-    
-    pipeline {
-    agent any
+
     stages {
         stage('Clone sources') {
             steps {
@@ -21,5 +19,4 @@ def call(){
             }
         }
     }
-}
 }
