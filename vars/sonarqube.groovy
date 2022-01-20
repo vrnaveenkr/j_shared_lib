@@ -1,5 +1,5 @@
 def call(){
-    echo "${scm.userRemoteConfigs[0].url}"
+    
     pipeline {
     agent any
     stages {
